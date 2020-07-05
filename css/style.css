@@ -1,0 +1,65 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    background-image: url(../src/jeremy.JPG);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.wrapper{
+    position: absolute;
+    top: 32%;
+    left: 5%;
+    color: #EDF4ED;
+    /* border: 1px solid red; */
+}
+
+.icons{
+    margin-top: 1rem;
+    /* border: 1px solid yellow; */
+    height: 3rem;
+}
+
+.icon{
+    font-size: 3rem;
+    margin-right: 2rem;
+    color: #EDF4ED;
+    opacity: 0.7;
+    transition: 0.3s all ease;
+    transition-delay: 0.1s;
+}
+
+.icon:hover{
+    opacity: 1;
+}
+
+.title{
+    font-family: 'Bungee Inline', cursive;
+    font-size: 4rem;
+    width: 100%;
+    /* border: 1px solid green; */
+}
+
+footer{
+    position: absolute;
+    right: 0.5rem;
+    bottom: 0.5rem;
+}
+
+footer > a{
+    font-size: 1.2rem;
+    color: #EDF4ED;
+    font-family: 'Poppins', sans-serif;
+}
