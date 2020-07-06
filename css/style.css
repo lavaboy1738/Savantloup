@@ -16,6 +16,8 @@ body{
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
+    /* animation: appear 1s ease-out; */
+    /* opacity: 0; */
 }
 
 .wrapper{
@@ -38,6 +40,32 @@ body{
     opacity: 0.7;
     transition: 0.3s all ease;
     transition-delay: 0.1s;
+    animation: opening 0.5s ease-in;
+    animation-fill-mode: backwards;
+}
+
+.icon-1{
+    animation-delay: 1s;
+}
+
+.icon-2{
+    animation-delay: 1.2s;
+}
+
+.icon-3{
+    animation-delay: 1.4s;
+}
+
+.icon-4{
+    animation-delay: 1.6s;
+}
+
+.icon-5{
+    animation-delay: 1.8s;
+}
+
+.icon-6{
+    animation-delay: 2s;
 }
 
 .icon:hover{
@@ -49,6 +77,7 @@ body{
     font-size: 4rem;
     width: 100%;
     /* border: 1px solid green; */
+    animation: opening 1s ease-in;
 }
 
 footer{
@@ -62,6 +91,26 @@ footer > a{
     color: #EDF4ED;
     font-family: 'Poppins', sans-serif;
 }
+
+@keyframes opening {
+    from {
+        opacity: 0;
+        transform: translateY(20%)
+    }
+    to {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+/* @keyframes appear {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 100%;
+    }
+} */
 
 @media only screen and (max-width: 600px){
     footer {
